@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel="icon" href="IMG/favicon.ico" type="image/x-icon">
+    <title>Race World</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+    <link rel='stylesheet' href="calendar/css/eventCalendar.css">
+    <link rel='stylesheet' href="calendar/css/eventCalendar_theme_responsive1.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header_item headerlogo">
+            <p><a href="index.html"> <img src="IMG/logo.png" height="70" class="scale"></a></p>
+        </div>
+        <div class="header_section">
+            <div class="header_item headerButton"> <a href="video.html">Видео</a> </div>
+            <div class="header_item headerButton"> <a href="calendar.html">Календарь событий</a> </div>
+            <div class="header_item headerButton"> <a href="news.html">Новости</a> </div>
+            <div class="header_item headerButton"> <a href="index.html">Главная</a> </div>
+        </div>
+    </div>
+
+    <div id="eventCalendar" class="calendarformat1"></div>
+    
+    <footer class="footer">
+        <p>2021© Student MIREA. ALL RIGHTS RESERVED</p>
+    </footer>
+
+    <script src="calendar/js/jquery-latest.min.js"></script>
+    <script src="calendar/js/moment.js"></script>
+    <script src="calendar/js/jquery.eventCalendar.js"></script>
+    <script>
+        $(function (){
+            var data = [
+            { "date": "2021-11-19 13:30:00", "title": "ФОРМУЛА 1 | Гран При Катара (2021) 1-Я ТРЕНИРОВКА", "description": 
+            "Катар <br> ТРАССА: Лосаил <br> КРУГИ: 57 <br> ДЛИНА КРУГА: 5380 м <br> ДИСТАНЦИЯ: 307 км <br> ШИНЫ: C1, C2, C3", "url": "https://matchtv.ru/autosport/formula-1/matchtvvideo_NI1434511_translation_Gran_pri_Katara_Svobodnaja_praktika_1" },
+
+            { "date": "2021-11-19 17:00:00", "title": "ФОРМУЛА 1 | Гран При Катара (2021) 2-Я ТРЕНИРОВКА", "description": 
+            "Катар <br> ТРАССА: Лосаил <br> КРУГИ: 57 <br> ДЛИНА КРУГА: 5380 м <br> ДИСТАНЦИЯ: 307 км <br> ШИНЫ: C1, C2, C3", "url": "https://matchtv.ru/autosport/formula-1/matchtvvideo_NI1434513_translation_Gran_pri_Katara_Svobodnaja_praktika_2" },
+
+            { "date": "2021-11-20 17:00:00", "title": "ФОРМУЛА 1 | Гран При Катара (2021) КВАЛИФИКАЦИЯ", "description": 
+            "Катар <br> ТРАССА: Лосаил <br> КРУГИ: 57 <br> ДЛИНА КРУГА: 5380 м <br> ДИСТАНЦИЯ: 307 км <br> ШИНЫ: C1, C2, C3", "url": "https://matchtv.ru/autosport/formula-1/matchtvvideo_NI1434528_translation_Gran_pri_Katara_Kvalifikacija" },
+
+            { "date": "2021-11-21 17:00:00", "title": "ФОРМУЛА 1 | Гран При Катара (2021) ГОНКА", "description": 
+            "Катар <br> ТРАССА: Лосаил <br> КРУГИ: 57 <br> ДЛИНА КРУГА: 5380 м <br> ДИСТАНЦИЯ: 307 км <br> ШИНЫ: C1, C2, C3", "url": "https://matchtv.ru/autosport/formula-1/matchtvvideo_NI1434587_translation_Gran_pri_Katara" },
+
+            { "date": "2021-12-03 16:30:00", "title": "ФОРМУЛА 1 | Гран При Саудовской Аравии (2021) 1-Я ТРЕНИРОВКА", "description": 
+            "Саудовская Аравия <br> Уличная трасса в Джидде <br> КРУГИ: 50 <br> ДЛИНА КРУГА: 6174 м <br> ДИСТАНЦИЯ: 309 км <br> ШИНЫ: C2, C3, C4", "url": "https://matchtv.ru/autosport/formula-1/matchtvvideo_NI1443197_translation_Gran_pri_Saudovskoj_Aravii_Svobodnaja_praktika_1" },
+
+            { "date": "2021-12-03 20:00:00", "title": "ФОРМУЛА 1 | Гран При Саудовской Аравии (2021) 2-Я ТРЕНИРОВКА", "description": 
+            "Саудовская Аравия <br> Уличная трасса в Джидде <br> КРУГИ: 50 <br> ДЛИНА КРУГА: 6174 м <br> ДИСТАНЦИЯ: 309 км <br> ШИНЫ: C2, C3, C4", "url": "https://matchtv.ru/autosport/formula-1/matchtvvideo_NI1443204_translation_Gran_pri_Saudovskoj_Aravii_Svobodnaja_praktika_2" },
+
+            { "date": "2021-12-04 17:00:00", "title": "ФОРМУЛА 1 | Гран При Саудовской Аравии (2021) 3-Я ТРЕНИРОВКА", "description": 
+            "Саудовская Аравия <br> Уличная трасса в Джидде <br> КРУГИ: 50 <br> ДЛИНА КРУГА: 6174 м <br> ДИСТАНЦИЯ: 309 км <br> ШИНЫ: C2, C3, C4", "url": "https://matchtv.ru/autosport/formula-1/matchtvvideo_NI1450879_clip_Gran_pri_Saudovskoj_Aravii_Restart_gonki" },
+
+            { "date": "2021-12-04 20:00:00", "title": "ФОРМУЛА 1 | Гран При Саудовской Аравии (2021) КВАЛИФИКАЦИЯ", "description": 
+            "Саудовская Аравия <br> Уличная трасса в Джидде <br> КРУГИ: 50 <br> ДЛИНА КРУГА: 6174 м <br> ДИСТАНЦИЯ: 309 км <br> ШИНЫ: C2, C3, C4", "url": "https://matchtv.ru/autosport/formula-1/matchtvvideo_NI1442714_translation_Gran_pri_Saudovskoj_Aravii_Kvalifikacija" },
+
+            { "date": "2021-12-05 20:30:00", "title": "ФОРМУЛА 1 | Гран При Саудовской Аравии (2021) ГОНКА", "description": 
+            "Саудовская Аравия <br> Уличная трасса в Джидде <br> КРУГИ: 50 <br> ДЛИНА КРУГА: 6174 м <br> ДИСТАНЦИЯ: 309 км <br> ШИНЫ: C2, C3, C4", "url": "https://matchtv.ru/autosport/formula-1/matchtvvideo_NI1442829_translation_Gran_pri_Saudovskoj_Aravii" },
+
+            { "date": "2021-12-10 12:30:00", "title": "ФОРМУЛА 1 | Гран При Абу-Даби (2021) 1-Я ТРЕНИРОВКА", "description": 
+            "ОАЭ <br> ТРАССА: Яс-Марина <br> КРУГИ: 55 <br> ДЛИНА КРУГА: 5554 м <br> ДИСТАНЦИЯ: 305 км <br> ШИНЫ: C3, C4, C5", "url": "http://www.event3.com/" },
+
+            { "date": "2021-12-10 16:00:00", "title": "ФОРМУЛА 1 | Гран При Абу-Даби (2021) 2-Я ТРЕНИРОВКА", "description": 
+            "ОАЭ <br> ТРАССА: Яс-Марина <br> КРУГИ: 55 <br> ДЛИНА КРУГА: 5554 м <br> ДИСТАНЦИЯ: 305 км <br> ШИНЫ: C3, C4, C5", "url": "http://www.event3.com/" },
+
+            { "date": "2021-12-11 13:00:00", "title": "ФОРМУЛА 1 | Гран При Абу-Даби (2021) 3-Я ТРЕНИРОВКА", "description": 
+            "ОАЭ <br> ТРАССА: Яс-Марина <br> КРУГИ: 55 <br> ДЛИНА КРУГА: 5554 м <br> ДИСТАНЦИЯ: 305 км <br> ШИНЫ: C3, C4, C5", "url": "http://www.event3.com/" },
+
+            { "date": "2021-12-11 16:00:00", "title": "ФОРМУЛА 1 | Гран При Абу-Даби (2021) КВАЛИФИКАЦИЯ", "description": 
+            "ОАЭ <br> ТРАССА: Яс-Марина <br> КРУГИ: 55 <br> ДЛИНА КРУГА: 5554 м <br> ДИСТАНЦИЯ: 305 км <br> ШИНЫ: C3, C4, C5", "url": "http://www.event3.com/" },
+
+            { "date": "2021-12-12 16:00:00", "title": "ФОРМУЛА 1 | Гран При Абу-Даби (2021) ГОНКА", "description": 
+            "ОАЭ <br> ТРАССА: Яс-Марина <br> КРУГИ: 55 <br> ДЛИНА КРУГА: 5554 м <br> ДИСТАНЦИЯ: 305 км <br> ШИНЫ: C3, C4, C5", "url": "http://www.event3.com/" },
+
+            { "date": "2022-01-02 16:00:00", "title": "Ралли Дакар 2022 года", "description": 
+            "Саудовская Аравия <br> СТАРТ: Хаил <br> ФИНИШ: Джидда <br> Этапы: 12 <br> ПОКРЫТИЕ ТРАССЫ: Песок, камни, грязь, асфальт <br> ДЛИНА ТРАССЫ: 4000 км", "url": "http://www.event3.com/" },
+
+            ];
+            $('#eventCalendar').eventCalendar({
+                    jsonData: data,
+                    jsonDateFormat: 'human',
+                    openEventInNewWindow: true,
+                    eventsLimit: 9,
+                    locales: {
+                        locale: "ru",
+                        txt_noEvents: "Нет запланированных событий",
+                        txt_SpecificEvents_prev: "",
+                        txt_SpecificEvents_after: "события:",
+                        txt_NextEvents: "Следующие события:",
+                        txt_GoToEventUrl: "Смотреть",
+                        moment: {
+                            "months" : [ "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
+                            "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь" ],
+                            "monthsShort" : [ "Янв", "Фев", "Мар", "Апр", "Май", "Июн",
+                            "Июл", "Авг", "Сен", "Окт", "Ноя", "Дек" ],
+                            "weekdays" : [ "Воскресенье", "Понедельник","Вторник","Среда","Четверг",
+                            "Пятница","Суббота" ],
+                            "weekdaysShort" : [ "Вс","Пн","Вт","Ср","Чт",
+                            "Пт","Сб" ],
+                            "weekdaysMin" : [ "Вс","Пн","Вт","Ср","Чт",
+                            "Пт","Сб" ]
+                    }
+                }
+            });
+        });
+    </script>
+</body>

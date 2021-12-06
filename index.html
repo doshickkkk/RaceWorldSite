@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel="icon" href="IMG/favicon.ico" type="image/x-icon">
+    <title>Race World</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+    <link rel='stylesheet' href="calendar/css/eventCalendar.css">
+    <link rel='stylesheet' href="calendar/css/eventCalendar_theme_responsive.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header_item headerlogo">
+            <p><a href="index.html"> <img src="IMG/logo.png" height="70" class="scale"></a></p>
+        </div>
+        <div class="header_section">
+            <div class="header_item headerButton"> <a href="video.html">Видео</a> </div>
+            <div class="header_item headerButton"> <a href="calendar.html">Календарь событий</a> </div>
+            <div class="header_item headerButton"> <a href="news.html">Новости</a> </div>
+            <div class="header_item headerButton"> <a href="index.html">Главная</a> </div>
+        </div>
+    </div>
+
+    <section class="main">
+        <div class="newscontainer">
+            <div>
+                <div class="news">
+                    <h1 class = "linknews"><a href="news1.html"> МИРОВОЙ ТУРИНГ СНОВА В РОССИИ: ЧТО НУЖНО ЗНАТЬ ОБ ЭТАПЕ WTCR В СОЧИ?</a></h1>
+                    <p>Гранд-финал чемпионата, прощальная гастроль 59-летнего ветерана и дебют российской команды. 
+                        Рассказываем о главных интригах стартовавшего гоночного уик-энда на Сочи Автодроме...</p>
+                    <img src="IMG/newsjpg.jpg" class="img">
+                </div>
+
+                <div class="newscontainer1">
+
+                    <div class="news1">
+                        <h2 class = "linknews"><a href="news3.html">ПОЧЕМУ RED BULL НЕ СМОГЛА УГНАТЬСЯ ЗА MERCEDES В КАТАРЕ? ТРИ ОСНОВНЫЕ ПРИЧИНЫ</a></h1>
+                        <p>Второй этап подряд лидер чемпионата Макс Ферстаппен был вынужден минимизировать потери и лишь наблюдать, 
+                            как его главный соперник летит к победе. Что на этот раз помешало Red Bull?</p>
+                    </div>
+
+                    <div class="news1">
+                        <h2 class = "linknews"><a href="news4.html">РОССИЙСКАЯ ДРИФТ СЕРИЯ ПРОВЕЛА МОЩНЫЙ ГОНОЧНЫЙ СЕЗОН В 2021 ГОДУ</a></h1>
+                        <p>В минувшие выходные на «Сочи Автодроме» завершился финал Гран При Российской Дрифт Серии. Сезон 2021 года был невероятно 
+                            интересным для пилотов, команд, зрителей и всех поклонников дрифта, поскольку российский чемпионат собрал спортсменов первой 
+                            величины со всего мира. Интрига в борьбе за титул чемпиона сохранялась вплоть до финального заезда.</p>
+                    </div>
+                </div>
+            </div>
+  
+        </div>
+
+        <div>
+            <div id="eventCalendar" class="calendarformat"></div>
+            
+            <div class="table">
+                <table>
+                    <tbody>
+                        <tr class="zagolvok1">
+                            <td colspan="4">СПРАВОЧНИК АВТОСПОРТА</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">ПОЛОЖЕНИЕ В ЧЕМПИОНАТЕ Ф1</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">Личный зачет</td>
+                        </tr>
+                        <tr>
+                            <td>1.</td>
+                            <td><img src="IMG/Netherlands.png"></td>
+                            <td>МАКС ФЕРСТАППЕН</td>
+                            <td>351.5</td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td><img src="IMG/GB.png"></td>
+                            <td>ЛЬЮИС ХЭМИЛТОН</td>
+                            <td>343.5</td>
+                        </tr>
+                        <tr>
+                            <td>3.</td>
+                            <td><img src="IMG/FI.png"></td>
+                            <td>ВАЛТТЕРИ БОТТАС</td>
+                            <td>203</td>
+                        </tr>
+                        <tr>
+                            <td>4.</td>
+                            <td><img src="IMG/Mexico.png"></td>
+                            <td> СЕРХИО ПЕРЕС</td>
+                            <td>190</td>
+                        </tr>
+                        <tr>
+                            <td>5.</td>
+                            <td><img src="IMG/GB.png"></td>
+                            <td> ЛАНДО НОРРИС</td>
+                            <td>153</td>
+                        </tr>
+                        <tr>
+                            <td>6.</td>
+                            <td><img src="IMG/Monaco.png"></td>
+                            <td>ШАРЛЬ ЛЕКЛЕР</td>
+                            <td>152</td>
+                        </tr>
+                        <tr>
+                            <td>7.</td>
+                            <td><img src="IMG/Spain.png"></td>
+                            <td>КАРЛОС САЙНС</td>
+                            <td>145.5</td>
+                        </tr>
+                        <tr>
+                            <td>8.</td>
+                            <td><img src="IMG/AU.png"></td>
+                            <td>ДАНИЭЛЬ РИККАРДО</td>
+                            <td>105</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            </div>
+    </section>
+
+    <footer class="footer">
+        <p>2021© Student MIREA. ALL RIGHTS RESERVED</p>
+    </footer>
+
+    <script src="calendar/js/jquery-latest.min.js"></script>
+    <script src="calendar/js/moment.js"></script>
+    <script src="calendar/js/jquery.eventCalendar.js"></script>
+    <script>
+        $(function (){
+            var data = [
+            { "date": "2021-11-19 13:30:00", "title": "ФОРМУЛА 1 | Гран При Катара (2021) 1-Я ТРЕНИРОВКА", "description": 
+            "Катар <br> ТРАССА: Лосаил <br> КРУГИ: 57 <br> ДЛИНА КРУГА: 5380 м <br> ДИСТАНЦИЯ: 307 км <br> ШИНЫ: C1, C2, C3", "url": "https://matchtv.ru/autosport/formula-1/matchtvvideo_NI1434511_translation_Gran_pri_Katara_Svobodnaja_praktika_1" },
+
+            { "date": "2021-11-19 17:00:00", "title": "ФОРМУЛА 1 | Гран При Катара (2021) 2-Я ТРЕНИРОВКА", "description": 
+            "Катар <br> ТРАССА: Лосаил <br> КРУГИ: 57 <br> ДЛИНА КРУГА: 5380 м <br> ДИСТАНЦИЯ: 307 км <br> ШИНЫ: C1, C2, C3", "url": "https://matchtv.ru/autosport/formula-1/matchtvvideo_NI1434513_translation_Gran_pri_Katara_Svobodnaja_praktika_2" },
+
+            { "date": "2021-11-20 17:00:00", "title": "ФОРМУЛА 1 | Гран При Катара (2021) КВАЛИФИКАЦИЯ", "description": 
+            "Катар <br> ТРАССА: Лосаил <br> КРУГИ: 57 <br> ДЛИНА КРУГА: 5380 м <br> ДИСТАНЦИЯ: 307 км <br> ШИНЫ: C1, C2, C3", "url": "https://matchtv.ru/autosport/formula-1/matchtvvideo_NI1434528_translation_Gran_pri_Katara_Kvalifikacija" },
+
+            { "date": "2021-11-21 17:00:00", "title": "ФОРМУЛА 1 | Гран При Катара (2021) ГОНКА", "description": 
+            "Катар <br> ТРАССА: Лосаил <br> КРУГИ: 57 <br> ДЛИНА КРУГА: 5380 м <br> ДИСТАНЦИЯ: 307 км <br> ШИНЫ: C1, C2, C3", "url": "https://matchtv.ru/autosport/formula-1/matchtvvideo_NI1434587_translation_Gran_pri_Katara" },
+
+            { "date": "2021-12-03 16:30:00", "title": "ФОРМУЛА 1 | Гран При Саудовской Аравии (2021) 1-Я ТРЕНИРОВКА", "description": 
+            "Саудовская Аравия <br> Уличная трасса в Джидде <br> КРУГИ: 50 <br> ДЛИНА КРУГА: 6174 м <br> ДИСТАНЦИЯ: 309 км <br> ШИНЫ: C2, C3, C4", "url": "https://matchtv.ru/autosport/formula-1/matchtvvideo_NI1443197_translation_Gran_pri_Saudovskoj_Aravii_Svobodnaja_praktika_1" },
+
+            { "date": "2021-12-03 20:00:00", "title": "ФОРМУЛА 1 | Гран При Саудовской Аравии (2021) 2-Я ТРЕНИРОВКА", "description": 
+            "Саудовская Аравия <br> Уличная трасса в Джидде <br> КРУГИ: 50 <br> ДЛИНА КРУГА: 6174 м <br> ДИСТАНЦИЯ: 309 км <br> ШИНЫ: C2, C3, C4", "url": "https://matchtv.ru/autosport/formula-1/matchtvvideo_NI1443204_translation_Gran_pri_Saudovskoj_Aravii_Svobodnaja_praktika_2" },
+
+            { "date": "2021-12-04 17:00:00", "title": "ФОРМУЛА 1 | Гран При Саудовской Аравии (2021) 3-Я ТРЕНИРОВКА", "description": 
+            "Саудовская Аравия <br> Уличная трасса в Джидде <br> КРУГИ: 50 <br> ДЛИНА КРУГА: 6174 м <br> ДИСТАНЦИЯ: 309 км <br> ШИНЫ: C2, C3, C4", "url": "https://matchtv.ru/autosport/formula-1/matchtvvideo_NI1450879_clip_Gran_pri_Saudovskoj_Aravii_Restart_gonki" },
+
+            { "date": "2021-12-04 20:00:00", "title": "ФОРМУЛА 1 | Гран При Саудовской Аравии (2021) КВАЛИФИКАЦИЯ", "description": 
+            "Саудовская Аравия <br> Уличная трасса в Джидде <br> КРУГИ: 50 <br> ДЛИНА КРУГА: 6174 м <br> ДИСТАНЦИЯ: 309 км <br> ШИНЫ: C2, C3, C4", "url": "https://matchtv.ru/autosport/formula-1/matchtvvideo_NI1442714_translation_Gran_pri_Saudovskoj_Aravii_Kvalifikacija" },
+
+            { "date": "2021-12-05 20:30:00", "title": "ФОРМУЛА 1 | Гран При Саудовской Аравии (2021) ГОНКА", "description": 
+            "Саудовская Аравия <br> Уличная трасса в Джидде <br> КРУГИ: 50 <br> ДЛИНА КРУГА: 6174 м <br> ДИСТАНЦИЯ: 309 км <br> ШИНЫ: C2, C3, C4", "url": "https://matchtv.ru/autosport/formula-1/matchtvvideo_NI1442829_translation_Gran_pri_Saudovskoj_Aravii" },
+
+            { "date": "2021-12-10 12:30:00", "title": "ФОРМУЛА 1 | Гран При Абу-Даби (2021) 1-Я ТРЕНИРОВКА", "description": 
+            "ОАЭ <br> ТРАССА: Яс-Марина <br> КРУГИ: 55 <br> ДЛИНА КРУГА: 5554 м <br> ДИСТАНЦИЯ: 305 км <br> ШИНЫ: C3, C4, C5", "url": "http://www.event3.com/" },
+
+            { "date": "2021-12-10 16:00:00", "title": "ФОРМУЛА 1 | Гран При Абу-Даби (2021) 2-Я ТРЕНИРОВКА", "description": 
+            "ОАЭ <br> ТРАССА: Яс-Марина <br> КРУГИ: 55 <br> ДЛИНА КРУГА: 5554 м <br> ДИСТАНЦИЯ: 305 км <br> ШИНЫ: C3, C4, C5", "url": "http://www.event3.com/" },
+
+            { "date": "2021-12-11 13:00:00", "title": "ФОРМУЛА 1 | Гран При Абу-Даби (2021) 3-Я ТРЕНИРОВКА", "description": 
+            "ОАЭ <br> ТРАССА: Яс-Марина <br> КРУГИ: 55 <br> ДЛИНА КРУГА: 5554 м <br> ДИСТАНЦИЯ: 305 км <br> ШИНЫ: C3, C4, C5", "url": "http://www.event3.com/" },
+
+            { "date": "2021-12-11 16:00:00", "title": "ФОРМУЛА 1 | Гран При Абу-Даби (2021) КВАЛИФИКАЦИЯ", "description": 
+            "ОАЭ <br> ТРАССА: Яс-Марина <br> КРУГИ: 55 <br> ДЛИНА КРУГА: 5554 м <br> ДИСТАНЦИЯ: 305 км <br> ШИНЫ: C3, C4, C5", "url": "http://www.event3.com/" },
+
+            { "date": "2021-12-12 16:00:00", "title": "ФОРМУЛА 1 | Гран При Абу-Даби (2021) ГОНКА", "description": 
+            "ОАЭ <br> ТРАССА: Яс-Марина <br> КРУГИ: 55 <br> ДЛИНА КРУГА: 5554 м <br> ДИСТАНЦИЯ: 305 км <br> ШИНЫ: C3, C4, C5", "url": "http://www.event3.com/" },
+
+            { "date": "2022-01-02 16:00:00", "title": "Ралли Дакар 2022 года", "description": 
+            "Саудовская Аравия <br> СТАРТ: Хаил <br> ФИНИШ: Джидда <br> Этапы: 12 <br> ПОКРЫТИЕ ТРАССЫ: Песок, камни, грязь, асфальт <br> ДЛИНА ТРАССЫ: 4000 км", "url": "http://www.event3.com/" },
+
+            ];
+            $('#eventCalendar').eventCalendar({
+                    jsonData: data,
+                    jsonDateFormat: 'human',
+                    openEventInNewWindow: true,
+                    eventsLimit: 4,
+                    locales: {
+                        locale: "ru",
+                        txt_noEvents: "Нет запланированных событий",
+                        txt_SpecificEvents_prev: "",
+                        txt_SpecificEvents_after: "события:",
+                        txt_NextEvents: "Следующие события:",
+                        txt_GoToEventUrl: "Смотреть",
+                        moment: {
+                            "months" : [ "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
+                            "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь" ],
+                            "monthsShort" : [ "Янв", "Фев", "Мар", "Апр", "Май", "Июн",
+                            "Июл", "Авг", "Сен", "Окт", "Ноя", "Дек" ],
+                            "weekdays" : [ "Воскресенье", "Понедельник","Вторник","Среда","Четверг",
+                            "Пятница","Суббота" ],
+                            "weekdaysShort" : [ "Вс","Пн","Вт","Ср","Чт",
+                            "Пт","Сб" ],
+                            "weekdaysMin" : [ "Вс","Пн","Вт","Ср","Чт",
+                            "Пт","Сб" ]
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+

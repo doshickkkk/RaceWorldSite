@@ -1,0 +1,466 @@
+/*_______________________________________*/
+    /* CSS Для всех страниц начало*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+
+*{
+    padding: 0;
+    margin:0;
+    }
+
+@media (max-width: 1280px){
+    body
+    {
+        width: max-content;
+    }
+
+}
+
+@media (max-width: 1630px){
+    body
+    {
+        width: max-content;
+    }
+
+}
+
+body{
+    background-color:  #414141;
+    color: white;
+}
+
+.header{
+
+    display: flex;
+    justify-content: space-between;
+    background: #252525;
+    -webkit-box-shadow: 0px 8px 10px 7px rgba(25, 29, 36, 0.21);
+    -moz-box-shadow: 0px 8px 10px 7px rgba(25, 29, 36, 0.21);
+    box-shadow: 0px 8px 10px 7px rgba(25, 29, 36, 0.21);
+    height: 70px;
+
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #252525;
+    height: 100px;
+    
+}
+
+.header_section{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-right: 200px;
+}
+
+.header_item{
+    padding: 1px 60px;
+    font-size: 17px;
+    justify-content: flex-end;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.headerlogo{
+    display: flex;
+    margin-left: 50px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.headerButton :hover{
+    color: white; 
+    line-height: 1;
+    text-decoration: none; 
+    cursor: pointer;
+
+}
+
+.headerButton :after{
+    background-color: #AF0404; 
+    display: block;
+    content: "";
+    height: 2px; 
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+
+.headerButton :hover:after,
+.headerButton :focus:after {
+    width: 100%;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.scale {
+    transition: 1s; 
+}
+
+.scale:hover {
+    transform: scale(1.2); 
+}
+
+
+    /* CSS Для всех страниц конец*/
+/*_______________________________________*/
+/*_______________________________________*/
+/*_______________________________________*/
+/*_______________________________________*/
+/*_______________________________________*/
+    /* CSS Для главной страницы начало*/
+
+
+.main{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5%;
+}
+.newscontainer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-top: 100px;
+    margin-left: 100px;
+    height: 1000px;
+    width: 1100px;
+    border-radius: 5px;
+    background-color: #252525;
+}
+
+.news{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    color: white;
+    height: 600px;
+    width: 1000px;
+    font-size: 20px; 
+    padding: 40px;
+}
+
+.calendar{
+    display: flex;
+    margin-top: 40px;
+    margin-left: 70px;
+    background-color: black;
+    width: 600px;
+}
+
+.news1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    height: 300px;
+    width: 400px;
+    font-size: 10px;    
+    margin-top: 25px;
+}
+
+
+.newscontainer1{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 1100px;
+}
+
+
+.img{
+    margin-right: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-top: 50px;
+    max-width: 90%;
+    
+}
+
+.img1{
+
+    max-width: 60%;
+    object-fit: cover;
+}
+
+.calendarformat{
+    margin-top: 60px;
+    margin-left: 100px;
+    width: 500px; 
+    height: 600px;
+    
+}
+
+p{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h2{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+}
+
+h2 ~ p{
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+.table table{
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-left: 100px;
+    border-radius: 5px;
+    background-color: #252525;
+    padding: 100px;
+}
+
+
+.zagolvok1{
+    font-size: 25px;
+}
+
+.linknews:hover{
+    text-decoration: underline;
+}
+
+    /* CSS Для главной страницы конец*/
+/*_______________________________________*/
+/*_______________________________________*/
+/*_______________________________________*/
+/*_______________________________________*/
+/*_______________________________________*/
+   /* CSS Для новостных страниц начало*/
+
+
+.currentnews{
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: #252525;
+    margin:60px auto 60px;
+    height: 7500px;
+    width: 1000px;
+}
+
+.currentnews1{
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: #252525;
+    margin:60px auto 60px;
+    height: 1150px;
+    width: 1000px;
+}
+
+.currentnews2{
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: #252525;
+    margin:60px auto 60px;
+    height: 4550px;
+    width: 1000px;
+}
+
+.currentnews3{
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: #252525;
+    margin:60px auto 60px;
+    height: 3000px;
+    width: 1000px;
+}
+
+
+.newstext{
+    padding: 100px;
+}
+
+h4 ~ p{
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+h3 ~ p{
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+h4{
+    padding-left: 50px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #ff0000d7;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    font-size: 150%;
+}
+
+h3{
+    padding-left: 50px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 200%;
+    margin-bottom: 50px;
+}
+
+br{
+    margin-top: 45px;
+}
+
+.img1{
+    display: block; 
+    width: 100%;
+    /* еще больше контроля с max-width */
+    max-width: 720px;
+    height: auto; 
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.link{
+    text-decoration: underline;
+}
+
+    /* CSS Для новостных страниц конец*/
+/*_______________________________________*/
+/*_______________________________________*/
+/*_______________________________________*/
+/*_______________________________________*/
+/*_______________________________________*/
+  /* CSS Для страницы с новостями начало*/
+
+.allnews{
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: #252525;
+    width: 1000px;
+    height: 2000px;
+    margin:60px auto 60px;
+}
+
+h5{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 200%;   
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.line{
+
+	padding: 0;
+	height: 0;
+	border: none;
+	border-top: 2px solid #333;
+    
+}
+
+h6{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 150%;   
+    margin-top: 15px;
+    margin-left: 50px;
+}
+
+h6 ~ p{
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+h7{
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+  /* CSS Для страницы с новостями конец*/
+/*_______________________________________*/
+/*_______________________________________*/
+/*_______________________________________*/
+/*_______________________________________*/
+/*_______________________________________*/
+  /* CSS Для страницы с календарем начало*/
+
+.calendarformat1{
+    margin:60px auto 60px;
+    width: 50%; 
+    height: 900px;
+}
+
+ /* CSS Для страницы с календарем конец*/
+/*_______________________________________*/
+/*_______________________________________*/
+/*_______________________________________*/
+/*_______________________________________*/
+/*_______________________________________*/
+/* CSS Для страницы со списком видео начало*/
+
+.allvideos{
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: #252525;
+    width: 1100px;
+    height: 2000px;
+    margin:60px auto 60px;
+}
+
+/* CSS Для страницы со списком видео конец*/
+/*_______________________________________*/
+/*_______________________________________*/
+/*_______________________________________*/
+/*_______________________________________*/
+/*_______________________________________*/
+   /* CSS Для страницы с видео начало*/
+
+.currentvideo{
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: #252525;
+    margin:60px auto 60px;
+    height: 1100px;
+    width: 1200px;
+}
+
+.videoplayer{
+    margin: 60px auto 60px;
+}
+
+h8{
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-top: 30px;
+    margin-left: 50px;
+    font-size: 200%;
+    font-weight: bold;
+}
+
+h8 ~ p{
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
